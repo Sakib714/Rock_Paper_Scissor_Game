@@ -80,3 +80,18 @@ print(f'You Scored total {percent}%')
 
 speak(f'Your total point is {point}')
 speak(f'You scored total {percent}percent')
+
+if percent < float(35):
+    speak("You scored less then 35 percent! I think i am smarter then u!")
+
+elif float(35) < percent < float(60):
+    speak("You scored an average total. But I think i can beat you in guessing. if you play like this soon AI will take over the world. ha ha ha ha")
+
+elif float(60)< percent <float(85):
+    speak('Well done. But not the best score. Ghost! soo close to 100 percent!')
+
+elif float(85)<percent<float(100):
+    speak('Congrats! You have a good brain. When AI will take over the world. i will refer my friend not to kill you. We can use your brain for our development!')
+
+else:
+    speak('Something went wrong!')
