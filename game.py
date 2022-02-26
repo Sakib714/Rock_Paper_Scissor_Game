@@ -1,5 +1,6 @@
 from random import choice
 import pyttsx3
+from time import sleep
 
 engine = pyttsx3.init()
 
@@ -22,6 +23,8 @@ welcome_word = 'Welcome to rock papper scissor game. Enter r for rock, enter p f
 
 print(welcome_word)
 speak(welcome_word)
+
+sleep(1)
 
 speak('How many times do u want to play')
 times = int(input('How many times do u want to play: ').lower())
